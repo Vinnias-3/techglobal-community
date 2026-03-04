@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
             min-height: 100vh;
             display: flex;
             justify-content: center;
@@ -25,13 +25,13 @@
         }
         
         h1 {
-            color: #333;
+            color: #1a1a2e;
             margin-bottom: 20px;
-            font-size: 36px;
+            font-size: 42px;
         }
         
         .welcome-text {
-            color: #666;
+            color: #333;
             margin-bottom: 30px;
             line-height: 1.8;
             font-size: 18px;
@@ -46,7 +46,7 @@
         }
         
         .next-steps h3 {
-            color: #333;
+            color: #0f3460;
             margin-bottom: 15px;
         }
         
@@ -56,33 +56,67 @@
         }
         
         .next-steps li {
-            margin-bottom: 10px;
+            margin-bottom: 12px;
             color: #555;
             display: flex;
             align-items: center;
             gap: 10px;
         }
         
+        .quick-links {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin: 25px 0;
+        }
+        
+        .quick-link {
+            display: block;
+            padding: 12px;
+            background: #f0f0f0;
+            color: #333;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: background 0.3s;
+        }
+        
+        .quick-link:hover {
+            background: #e0e0e0;
+        }
+        
+        .whatsapp-link {
+            background: #25D366;
+            color: white;
+        }
+        
+        .whatsapp-link:hover {
+            background: #128C7E;
+        }
+        
         .button {
             display: inline-block;
             padding: 15px 40px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 100%);
             color: white;
             text-decoration: none;
             border-radius: 10px;
             font-weight: 600;
             font-size: 18px;
             transition: transform 0.2s;
-            margin-top: 20px;
+            margin-top: 10px;
         }
         
         .button:hover {
             transform: translateY(-2px);
         }
         
-        .social-proof {
-            margin-top: 30px;
-            color: #999;
+        .mission-reminder {
+            margin-top: 25px;
+            padding: 15px;
+            background: #e3f2fd;
+            border-radius: 10px;
+            color: #0f3460;
             font-size: 14px;
         }
     </style>
@@ -92,25 +126,36 @@
         <h1>🎉 Welcome to TechGlobal!</h1>
         
         <div class="welcome-text">
-            <p>Thank you for joining our global tech community!<br>
-            <strong>Vinnias</strong> and the TechGlobal team are excited to have you on board.</p>
+            <p><strong>You're now part of a global community exploring:</strong><br>
+            Technology • Cybersecurity • Physics • Nature • Psychology • Political Insights</p>
         </div>
         
         <div class="next-steps">
             <h3>📋 What happens next?</h3>
             <ul>
-                <li>✅ You'll receive a confirmation email shortly</li>
-                <li>✅ We'll send you a WhatsApp invitation within 24 hours</li>
-                <li>✅ Get ready for tech updates, opportunities, and networking</li>
-                <li>✅ Follow us on social media for daily tech insights</li>
+                <li>✅ Check your email for confirmation</li>
+                <li>✅ Join our WhatsApp group below</li>
+                <li>✅ Follow us on TikTok @techglobal_</li>
+                <li>✅ Get ready for daily insights and discussions</li>
             </ul>
+            
+            <div class="quick-links">
+                <a href="https://chat.whatsapp.com/DQRKHyS334u4rGdAVY16eG" class="quick-link whatsapp-link" target="_blank">
+                    📱 Join WhatsApp Group Now
+                </a>
+                <a href="https://tiktok.com/@techglobal_" class="quick-link" target="_blank">
+                    🎵 Follow on TikTok
+                </a>
+            </div>
         </div>
         
-        <a href="https://Vinnias-3.github.io/techglobal-community" class="button">Back to Home</a>
-        
-        <div class="social-proof">
-            🌍 Joining tech enthusiasts from around the world
+        <div class="mission-reminder">
+            🌍 "Learn, explore, and access quality electronics to stay ahead in the digital world."
         </div>
+        
+        <a href="https://vinnias-3.github.io/techglobal-community/" class="button">
+            Back to TechGlobal Home
+        </a>
     </div>
 </body>
 </html>
